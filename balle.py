@@ -56,8 +56,6 @@ class Ball(pm.entities.CircleEntity) :
         angle = math.atan2(-vector.y, vector.x)
         angle = (angle + math.pi) % (2 * math.pi) - math.pi
 
-        # Clamp ----> Fait par Mathéo 
-
         sign = 1 if angle >= 0 else -1
         abs_angle = abs(angle)
         mini = math.radians(self.angle_min)
